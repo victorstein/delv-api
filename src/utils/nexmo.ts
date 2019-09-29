@@ -1,5 +1,7 @@
 let Telephone = require('nexmo')
 
+const { NEXMO_API_KEY, NEXMO_API_SECRET } = process.env
+
 // Request response interface
 interface requestResponse {
   request_id: string
@@ -16,8 +18,8 @@ interface requestError {
 
 // Initialize nexmo
 const nexmo = new Telephone({
-  apiKey: 'f6772158',
-  apiSecret: '6zJD447GoSlUiKkF',
+  apiKey: NEXMO_API_KEY,
+  apiSecret: NEXMO_API_SECRET,
 })
 
 class Nexmo {
