@@ -1,4 +1,5 @@
 let Telephone = require('nexmo')
+import 'dotenv/config'
 
 const { NEXMO_API_KEY, NEXMO_API_SECRET } = process.env
 
