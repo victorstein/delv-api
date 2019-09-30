@@ -22,6 +22,10 @@ class Address {
   @prop()
   @Field()
   city?: string
+
+  @prop()
+  @Field()
+  observations?: string
 }
 
 @ObjectType({ description: 'User model. The user may have one of 3 roles: admin, user, store' })
@@ -62,7 +66,9 @@ export class User extends Typegoose {
   address?: Address
 
   @prop()
-  validationId?: string
+  @Field({ description: 'This field is used for nexmo validation' })
+  requestId?: string
+
 }
 
 export const userModel = new User()
