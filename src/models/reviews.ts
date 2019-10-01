@@ -3,7 +3,7 @@ import { Typegoose, prop } from "@hasezoey/typegoose";
 import { Length } from "class-validator";
 
 @ObjectType()
-export class review extends Typegoose {
+export class Review extends Typegoose {
   @Field(() => ID)
   id: string
   
@@ -20,3 +20,6 @@ export class review extends Typegoose {
   @Field({ nullable: false })
   rating: number
 }
+
+export const reviewModel = new Review()
+  .getModelForClass(Review, { schemaOptions: { timestamps: true } })
