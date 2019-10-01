@@ -30,3 +30,6 @@ export class Product extends Typegoose {
   @Field()
   available: true
 }
+
+export const productModel = new Product()
+  .getModelForClass(Product, { schemaOptions: { timestamps: true } })
