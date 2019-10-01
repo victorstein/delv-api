@@ -2,7 +2,7 @@ import { ObjectType, Field, ID, Root } from 'type-graphql'
 import { Typegoose, prop } from '@hasezoey/typegoose'
 
 @ObjectType()
-class Address {
+export class Address {
   @prop({ default: 'Nicaragua' })
   @Field()
   country?: string
@@ -26,6 +26,14 @@ class Address {
   @prop()
   @Field()
   observations?: string
+
+  @prop()
+  @Field()
+  lattitude: number
+
+  @prop()
+  @Field()
+  longitude: number
 }
 
 @ObjectType({ description: 'User model. The user may have one of 3 roles: admin, user, store' })
