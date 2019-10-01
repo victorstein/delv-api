@@ -1,7 +1,5 @@
 # DELV API
 
-![GitHub last commit](https://img.shields.io/github/last-commit/victorstein/delv-api.svg?style=for-the-badge)
-
 This project houses the API for the DELV project.
 
 ## Built With
