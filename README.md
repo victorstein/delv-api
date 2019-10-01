@@ -10,10 +10,6 @@ This project houses the API for the DELV project.
 * [Typescript](http://www.typescriptlang.org/) - A Javascript superset
 * [type-graphql](https://typegraphql.ml/) - As an additional layer to graphql to use classes
 
-## Contributing
-
-Feel free to submit your PRs for review. There's currently no template for contribution. As the project grows we will look into further implementation of this.
-
 ## Authors
 
 <!-- prettier-ignore -->
