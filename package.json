@@ -23,7 +23,7 @@
   "homepage": "https://github.com/victorstein/delv-api#readme",
   "dependencies": {
     "@hasezoey/typegoose": "^5.9.2",
-    "apollo-server-express": "^2.9.4",
+    "apollo-server-express": "^2.14.2",
     "bcryptjs": "^2.4.3",
     "class-validator": "^0.10.1",
     "dotenv": "^8.1.0",
